@@ -1,4 +1,4 @@
-# 🌟 AsDevAd - Your AI Mental Health Companion
+# 🌟 MannSathi - Your AI Mental Health Companion
 
 > *"In the midst of winter, I found there was, within me, an invincible summer."* - Albert Camus
 
@@ -10,11 +10,11 @@
 
 Mental health is a silent crisis affecting **197 million people** in India alone. With only **0.75 psychiatrists per 100,000 people** (4x less than WHO recommendations), millions struggle in silence.
 
-**AsDevAd** breaks down these barriers by bringing professional mental health support to your fingertips - anytime, anywhere, completely anonymously.
+**** breaks down these barriers by bringing professional mental health support to your fingertips - anytime, anywhere, completely anonymously.
 
 ---
 
-## ✨ What Makes AsDevAd Special
+## ✨ What Makes  MannSathd Special
 
 ### 🧠 **Intelligent Mental Health Assessment**
 - **AI-powered evaluations** that adapt to your responses
@@ -76,8 +76,8 @@ Turn self-care into an adventure:
 
 ```bash
 # Clone and enter
-git clone [https://github.com/mraasary/AsDevAd---AI-Mental-Health-Companion.git]
-cd AsDevAd
+git clone 
+cd
 
 # Install magic
 npm install
@@ -98,7 +98,7 @@ mongod & node server.js
 ## 🎯 Your Wellness Journey
 
 ```
-🌟 Welcome to AsDevAd
+🌟 Welcome to  MannSath
     ↓
 👤 Create Your Safe Space
     ↓
