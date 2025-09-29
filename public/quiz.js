@@ -16,7 +16,7 @@ document.getElementById('quiz-form').addEventListener('submit', async function (
   }
 
   try {
-    const res = await fetch('http://localhost:3000/api/submit-quiz', {
+    const res = await fetch('/api/submit-quiz', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: currentUser.email, responses }),

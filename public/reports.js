@@ -20,7 +20,7 @@ async function fetchReportFromServer() {
 
   try {
     console.log('Fetching report for email:', email);
-    const response = await fetch(`http://localhost:3000/api/report/${encodeURIComponent(email)}`);
+    const response = await fetch(`/api/report/${encodeURIComponent(email)}`);
     
     if (!response.ok) {
       const error = await response.json();

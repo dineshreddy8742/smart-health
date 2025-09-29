@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     showTypingIndicator();
     
     // Send to backend
-    fetch('http://localhost:3000/api/chat', {
+    fetch('/api/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     
     try {
-      const response = await fetch('http://localhost:3000/api/cbt-report', {
+      const response = await fetch('/api/cbt-report', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

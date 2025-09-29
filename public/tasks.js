@@ -18,10 +18,7 @@ async function loadTodayTasks() {
   const taskList = document.getElementById("task-list");
   if (!taskList) return; // Not on dashboard page
   
-  taskList.innerHTML = "";
-
-  try {
-    const res = await fetch(`http://localhost:3000/api/tasks/${email}`);
+    const res = await fetch(`/api/tasks/${email}`);
     const data = await res.json();
     const todayTasks = [];
 
@@ -60,7 +57,7 @@ async function loadTodayTasks() {
 
         const isCompleted = checkbox.classList.contains("completed");
 
-        await fetch("http://localhost:3000/api/tasks", {
+        await fetch("/api/tasks", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -96,7 +93,7 @@ async function addCustomTask() {
   const today = new Date().toISOString().split("T")[0];
 
   try {
-    const res = await fetch("http://localhost:3000/api/tasks", {
+    const res = await fetch("/api/tasks", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -136,7 +133,7 @@ async function loadTaskHistory() {
   }
 
   try {
-    const res = await fetch(`http://localhost:3000/api/tasks/${email}`);
+    const res = await fetch(`/api/tasks/${email}`);
     const data = await res.json();
     console.log("Fetched data from server:", data);
 

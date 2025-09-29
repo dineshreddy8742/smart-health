@@ -76,7 +76,7 @@ async function submitMood() {
     };
 
     try {
-        const response = await fetch('http://localhost:3000/api/mood', {
+        const response = await fetch('/api/mood', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -115,7 +115,7 @@ async function loadMoodHistory() {
     if (!userEmail) return;
 
     try {
-        const response = await fetch(`http://localhost:3000/api/mood-history/${userEmail}`);
+        const response = await fetch(`/api/mood-history/${userEmail}`);
         if (response.ok) {
             const data = await response.json();
             moodHistory = data.moodEntries || [];
